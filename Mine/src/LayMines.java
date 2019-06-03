@@ -3,7 +3,7 @@ import javax.swing.*;
 public class LayMines{   
      ImageIcon mineIcon; 
      LayMines() {
-          mineIcon=new ImageIcon("mine.gif");
+          mineIcon=new ImageIcon("./mine.gif");
      }
      public void layMinesForBlock(Block block[][],int mineCount){
          int row=block.length;

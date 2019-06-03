@@ -2,7 +2,15 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 public class MineArea extends JPanel implements ActionListener,MouseListener{
+     private static MineArea single = null;
+     public static MineArea getInstance(int row, int colum, int mineCount, int grade) {
+         if (single == null)
+             single = new MineArea(row, colum, mineCount, grade);
+         return single;
+     }
+
      JButton reStart;
+     ImageIcon reStartImg;
      Block [][] block;
      BlockView [][] blockView;
      LayMines lay;
@@ -15,8 +23,12 @@ public class MineArea extends JPanel implements ActionListener,MouseListener{
      int spendTime=0;
      Record record;
      public MineArea(int row,int colum, int mineCount,int grade) {
-         reStart=new JButton("重新开始");
-         mark=new ImageIcon("mark.gif");  //探雷标记
+       //restart 大小设置
+         reStart=new JButton(new ImageIcon(".   /restart.gif"));
+         reStartImg = new ImageIcon("./restart.gif");
+         reStart.setPreferredSize(new Dimension(reStartImg.getIconWidth(), reStartImg.getIconHeight()));
+
+         mark=new ImageIcon("./mark.gif");  //探雷标记
          time=new Timer(1000,this);
          showTime=new JTextField(5);
          showMarkedMineCount=new JTextField(5);

@@ -13,7 +13,7 @@ public class MineGame extends JFrame implements ActionListener{
      Hashtable hashtable=null;
      ShowRecord showHeroRecord=null;
      MineGame(){
-         mineArea=new MineArea(16,16,40,1);
+         mineArea=MineArea.getInstance(16,16,40,1);
          add(mineArea,BorderLayout.CENTER);
          bar=new JMenuBar();
          fileMenu=new JMenu("сно╥");
