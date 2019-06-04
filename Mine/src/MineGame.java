@@ -53,7 +53,7 @@ public class MineGame extends JFrame implements ActionListener{
      public void actionPerformed(ActionEvent e){
         if(e.getSource()==beginner){
               mineArea.initMineArea(8,8,10,1);
-              setBounds(100,100,200,280); 
+              setBounds(100,100,200,280);  
         }
         if(e.getSource()==intermediate){
               mineArea.initMineArea(16,16,40,2);

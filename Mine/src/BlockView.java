@@ -11,7 +11,7 @@ public class BlockView extends JPanel{
         blockNameOrIcon.setHorizontalTextPosition(AbstractButton.CENTER);
         blockNameOrIcon.setVerticalTextPosition(AbstractButton.CENTER); 
         blockCover=new JButton(); 
-        add("cover",blockCover);
+        add("cover",blockCover); 
         add("view",blockNameOrIcon);
      }
      public void giveView(Block block){

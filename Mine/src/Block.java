@@ -14,7 +14,7 @@ public class Block {
      }
      public int getAroundMineNumber() {
          return aroundMineNumber;
-     }
+     } 
      public String getName() { 
          return name;  
      }

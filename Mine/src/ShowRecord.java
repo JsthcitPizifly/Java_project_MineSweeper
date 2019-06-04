@@ -16,7 +16,7 @@ public class ShowRecord extends JDialog implements ActionListener{
           setResizable(false);
           setVisible(false);
           setModal(true); 
-          labelBeginner=new JLabel[3];
+          labelBeginner=new JLabel[3]; 
           labelIntermediate=new JLabel[3];
           labelAdvanced=new JLabel[3];
           for(int i=0;i<3;i++) {

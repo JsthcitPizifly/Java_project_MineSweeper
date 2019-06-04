@@ -15,7 +15,7 @@ public class Record extends JDialog implements ActionListener{
       setTitle("记录你的成绩");
       this.time=time; 
       this.grade=grade;
-      setBounds(100,100,240,160);
+      setBounds(100,100,240,160); 
       setResizable(false);
       setModal(true); 
       confirm=new JButton("确定");
